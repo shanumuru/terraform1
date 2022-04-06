@@ -15,10 +15,10 @@ pipeline {
             }
         }
         
-        stage ("terraform planAction") {
+        stage ("terraform validate") {
             steps {
                 echo "Terraform action is plan }"
-               sh ('terraform plan') 
+               sh ('terraform validate') 
            }
         }
     }
